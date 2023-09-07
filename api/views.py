@@ -13,8 +13,8 @@ def user_data(request):
 		'current_day': d.strftime("%A"),
 		'utc_time': utc_time,
 		'track': track,
-		'github_file_url': '',
-		'github_repo_url': '',
+		'github_file_url': 'https://github.com/bukeme/hng-user-api/blob/master/api/views.py',
+		'github_repo_url': 'https://github.com/bukeme/hng-user-api',
 		'status_code': 200,
 	}
 	return JsonResponse(data, status=200)
