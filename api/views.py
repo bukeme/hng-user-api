@@ -9,9 +9,9 @@ def user_data(request):
 	d = datetime.now()
 	utc_time = datetime.now(pytz.utc)
 	data = {
-		'slack_name': slack_name,
+		'slack_name': '@' + slack_name,
 		'current_day': d.strftime("%A"),
-		'utc_time': utc_time,
+		'utc_time': utc_time.strftime('%Y-%m-%dT%H:%M:%SZ'),
 		'track': track,
 		'github_file_url': 'https://github.com/bukeme/hng-user-api/blob/master/api/views.py',
 		'github_repo_url': 'https://github.com/bukeme/hng-user-api',
