@@ -20,5 +20,5 @@ from api.views import user_data
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', user_data, name='user_data'),
+    path('api', user_data, name='user_data'),
 ]
